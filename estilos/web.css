@@ -14,7 +14,7 @@ body {
    width: 100%;
    height: 100%;
    /*le indicamos la opacidad a la imagen de fondo con un color base*/
-   background-image: linear-gradient(rgba(238, 233, 221, 0.60), rgba(238, 233, 221, 0.60)), url('../Imagenes/tacofondo.jpg');/*inserta la imagen de fondo en toda la web*/
+   background-image: linear-gradient(rgba(238, 233, 221, 0.60), rgba(238, 233, 221, 0.60)), url('../imagenes/tacofondo.jpg');/*inserta la imagen de fondo en toda la web*/
    background-repeat: no-repeat;/*evita que la imagen se repita varias veces*/
    background-position: center;
    background-attachment: fixed; 

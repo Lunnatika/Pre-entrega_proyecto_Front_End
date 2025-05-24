@@ -1,0 +1,253 @@
+@import url(registro.css);
+@import url(somos.css);
+@import url(carrito.css);
+/*estilos generales responsivos*/
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Times New Roman', Times, serif;
+  
+}
+/*aplica un estilo general al cuerpo de la web*/
+body {
+   width: 100%;
+   height: 100%;
+   /*le indicamos la opacidad a la imagen de fondo con un color base*/
+   background-image: linear-gradient(rgba(238, 233, 221, 0.60), rgba(238, 233, 221, 0.60)), url('../Imagenes/tacofondo.jpg');/*inserta la imagen de fondo en toda la web*/
+   background-repeat: no-repeat;/*evita que la imagen se repita varias veces*/
+   background-position: center;
+   background-attachment: fixed; 
+   background-position: center;/*centra la imagen en la web*/
+   background-size: cover;/*hace que la imagen ocupe todo el ancho de la web*/
+   margin: 0px;
+   padding: 0px;
+   font-family: 'Times New Roman', Times, serif;
+   overflow-x: hidden;
+}
+
+/* Contenedor principal adaptable */
+main, .contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
+
+/* Header y nav responsivo */
+header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 10px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: rgba(240, 42, 7, 0.493);
+  border-radius: 8px;
+  color: #070707;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(233, 73, 9, 0.6);
+}
+
+nav a:hover {
+  background-color: rgba(11, 233, 29, 0.4);
+}
+
+/*aplica diferentes fuentes y colores a las partes del titulo*/
+.title1{
+  color:green;
+  font-family: "Techno at Dusk", Helvetica, sans-serif;
+  font-size: 4rem;
+  text-shadow: 
+  -0.05px -0.05px 0 black,
+  -0.05px -0.05px 0 black,
+  -0.05px -0.05px 0 black,
+  -0.05px -0.05px 0 black;
+-webkit-text-stroke: 0.5px black
+}
+
+.title2{
+   color: white;
+   font-family: "Lovely Home", Helvetica, sans-serif;
+   font-size: 4rem;
+   text-shadow: 
+        -0.05px -0.05px 0 black,
+        -0.05px -0.05px 0 black,
+        -0.05px -0.05px 0 black,
+        -0.05px -0.05px 0 black;
+    -webkit-text-stroke: 0.5px black;
+}
+.title3{
+   color: red;
+   font-family: "Aldivaro Stamp", Helvetica, serif;
+   font-style: normal;
+   font-size: 4rem;
+   text-shadow: 
+        -0.05px -0.05px 0 black,
+        -0.05px -0.05px 0 black,
+        -0.05px -0.05px 0 black,
+        -0.05px -0.05px 0 black;
+    -webkit-text-stroke: 0.5px black;
+}
+
+/*Mantiene nuestro logo en el centro de la pantalla*/
+.logo-centro {
+ max-width: 200px;
+  height: auto;
+  margin: 10px 0;
+  position: static !important; /* Asegura que no se desplace fuera de flujo */
+}
+
+.enlaces {
+   margin-top: 15px;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+
+    & a {
+      color: inherit; /* Herencia del color del texto del padre */
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 8px;
+      background-color: rgba(226, 90, 66, 0.329);
+      transition: background-color 0.3s;
+      box-shadow: 0 0 15px rgba(233, 73, 9, 0.911);
+  }
+
+    & a:hover {
+      background-color: rgba(41, 241, 58, 0.4);
+  }
+}
+
+.boton {
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(117, 111, 111);
+    background: linear-gradient(to right, #007a33, #ffffff, #d42d2d);
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+   /*da una especie de animacion al boton*/
+  .boton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+
+.degradado-mexico {
+    white-space: nowrap;
+    display: flexbox;
+    color: #cd212a; /* fallback */
+    background: linear-gradient(to right, #008c45, #ffffff, #cd212a); /* Verde fuerte, blanco, rojo intenso */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: clamp(1.5rem, 5vw, 3rem); /* Responsive entre 1.5rem y 3rem */
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 0.6px #000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+@media (max-width: 1200px) {
+  .title1, .title2, .title3, .degradado-mexico {
+    font-size: 3rem;
+  }
+
+  .contenedor, main {
+    width: 95%;
+    padding: 10px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  .logo-centro {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title1, .title2, .title3 {
+    font-size: 2.5rem;
+  }
+
+  nav a {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .boton {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+
+  .logo-centro {
+    max-width: 150px;
+  }
+
+  .degradado-mexico {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 5px;
+  }
+
+  .title1, .title2, .title3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .contenedor, main {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .boton {
+    width: 90%;
+    text-align: center;
+  }
+
+  .logo-centro {
+    max-width: 120px;
+  }
+
+  .degradado-mexico {
+    font-size: 1.5rem;
+  }
+}
+

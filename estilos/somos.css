@@ -1,0 +1,68 @@
+@import url(web.css);
+@import url(registro.css);
+
+
+
+.parrafo {
+    font-family: cursive;
+    font-size: 1rem;
+    /*font-weight: bold;*/
+    width: 60%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 3px solid #f38e4ae8;
+    box-shadow: 0 0 15px rgba(241, 8, 8, 0.418)
+}
+
+.quienes-somos-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.taco-icon {
+  height: 2em;
+  vertical-align: middle;
+  margin: 0 8px;
+}
+
+@media (max-width: 1200px) {
+  .parrafo {
+    width: 80%;
+    padding: 25px;
+  }
+
+  .taco-icon {
+    height: 1.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  .parrafo {
+    width: 90%;
+    font-size: 0.95rem;
+    padding: 20px;
+  }
+
+  .taco-icon {
+    height: 1.6em;
+    margin: 0 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .parrafo {
+    width: 95%;
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+
+  .taco-icon {
+    height: 1.4em;
+    margin: 0 4px;
+  }
+}
